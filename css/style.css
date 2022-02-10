@@ -51,7 +51,7 @@
 
 .debug [class*="card_"]::before {
 	content: '';
-	padding-bottom: 85%;
+	padding-bottom: 75%;
 	display: block;
 }
 
