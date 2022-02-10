@@ -18,7 +18,7 @@
 .debug .nav_item,
 .debug .btn_menu,
 .debug .hero_title,
-.debug .hero_star,
+.debug .hr_star,
 .debug .hero_subtitle {
 	height: 20px;
 	background-color: white;
@@ -29,7 +29,7 @@
 	background-color: #99999955;
 }
 
-.debug .hero {
+#hero {
 	background-color: #1abc9c;
 }
 
@@ -41,4 +41,40 @@
 	content: '';
 	padding-bottom: 100%;
 	display: block;
+}
+
+.debug .title,
+#portfolio .hr_star {
+	height: 20px;
+	background-color: black;
+}
+
+.debug [class*="card_"]::before {
+	content: '';
+	padding-bottom: 85%;
+	display: block;
+}
+
+.debug .card_1 {
+	background-color: #ba4b63;
+}
+
+.debug .card_2 {
+	background-color: #1ea4b6;
+}
+
+.debug .card_3 {
+	background-color: #000;
+}
+
+.debug .card_4 {
+	background-color: #1c83c1;
+}
+
+.debug .card_5 {
+	background-color: #0e38b5;
+}
+
+.debug .card_6 {
+	background-color: #ccb2a3;
 }
