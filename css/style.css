@@ -7,7 +7,7 @@
 
 	--header-height: 90px; /* Sizes */
 	
-	--hr-width-xs: 42px; /* Overcomplicated horizzontale rule */
+	--hr-width-xs: 42px; /* Overcomplicated horizzontal rule */
 	--hr-width-sm: 75px;
 	--hr-width-md: 142px;
 	--hr-width-xl: 172px;
@@ -30,6 +30,7 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
 }
 
 h1 {
