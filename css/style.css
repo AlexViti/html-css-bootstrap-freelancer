@@ -16,6 +16,16 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+	font-size: 36px;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 62px;
+	}
+}
+	
 .bg-blue-gray {
 	background-color: var(--blue-gray-color);
 }
@@ -30,6 +40,43 @@ body {
 
 .rounded-5 {
 	border-radius: .5rem;
+}
+
+/* Hr-star rules */
+
+[class^='hr_star-']::before,
+ [class^='hr_star-']::after {
+	content: '';
+	display: inline-block;
+	width: 75px;
+	height: 4px;
+	border-radius: 2px;
+	margin: 0 8px;
+}
+
+@media screen and (min-width: 768px) {
+	[class^='hr_star-']::before,
+	 [class^='hr_star-']::after {
+		width: 142px;
+		margin: 0 25px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	[class^='hr_star-']::before,
+	 [class^='hr_star-']::after {
+		width: 172px;
+	}
+}
+
+.hr_star-white::before,
+.hr_star-white::after {
+	background-color: #fff;
+}
+
+.hr_star-black::before,
+.hr_star-black::after {
+	background-color: #000;
 }
 
 /* Header */
