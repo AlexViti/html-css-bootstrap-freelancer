@@ -29,7 +29,8 @@
 	background-color: #99999955;
 }
 
-#hero {
+#hero,
+#about {
 	background-color: #1abc9c;
 }
 
@@ -43,7 +44,7 @@
 	display: block;
 }
 
-.debug .title,
+#portfolio .title,
 #portfolio .hr_star {
 	height: 20px;
 	background-color: black;
@@ -77,4 +78,15 @@
 
 .debug .card_6 {
 	background-color: #ccb2a3;
+}
+
+#about .title,
+#about .hr_star {
+	height: 20px;
+	background-color: white;
+}
+
+.debug p {
+	height: 100px;
+	background-color: white;
 }
