@@ -1,21 +1,28 @@
-.debug header,
-.debug .main_footer {
-	background-color: #2c3e50;
+:root {
+	--green-color: #1abc9c;
+	--blue-gray-color: #2c3e50;
 }
 
-.debug header .container {
+header,
+.main_footer {
+	background-color: var(--blue-gray-color);
+}
+
+header .row {
 	height: 90px;
 }
+
+#jumbotron,
+#about {
+	background-color: var(--green-color);
+}
+
+/* #DEBUG */
 
 .debug .container {
 	background-color: #00000055;
 }
 
-.debug header .row {
-	height: 100%;
-}
-
-.debug .header_title,
 .debug .nav_item,
 .debug .btn_menu,
 .debug .hero_title,
@@ -30,11 +37,6 @@
 	background-color: #99999955;
 }
 
-#hero,
-#about {
-	background-color: #1abc9c;
-}
-
 .debug .hero_img {
 	background-color: #2c3e50;
 }
@@ -43,12 +45,6 @@
 	content: '';
 	padding-bottom: 100%;
 	display: block;
-}
-
-#portfolio .title,
-#portfolio .hr_star {
-	height: 20px;
-	background-color: black;
 }
 
 .debug [class*="card_"]::before {
