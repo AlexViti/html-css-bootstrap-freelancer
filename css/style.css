@@ -1,9 +1,19 @@
-/* Variables and common classes */
+/* Variables and common classes/framework integration */
 
 :root {
-	--green-color: #1abc9c;
+	--green-color: #1abc9c; /* Colors */
 	--blue-gray-color: #2c3e50;
 	--blue-gray-lighter-color: #3a546d;
+
+	--header-hight: 90px; /* Sizes */
+}
+
+html {
+	scroll-padding-top: var(--header-hight); /* Allow links to go */
+}														  /* past the fixed header */
+
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
 .bg-blue-gray {
@@ -18,22 +28,24 @@
 	background-color: var(--green-color);
 }
 
+.rounded-5 {
+	border-radius: .5rem;
+}
+
 /* Header */
 
 header .row {
-	height: 90px;
+	height: var(--header-hight);
 }
 
 /* Main */
+
+main { 
+	padding-top: var(--header-hight);
+}
 
 /* Jumbo */
 
 .jumbo_img {
 	width: 226px;
-}
-
-/* Cards */
-
-.cards img {
-	width: 100%;
 }
