@@ -1,117 +1,39 @@
+/* Variables and common classes */
+
 :root {
 	--green-color: #1abc9c;
 	--blue-gray-color: #2c3e50;
+	--blue-gray-lighter-color: #3a546d;
 }
 
-.bg-gray-blue {
+.bg-blue-gray {
 	background-color: var(--blue-gray-color);
+}
+
+.bg-blu-gray-lighter {
+	background-color: var(--blue-gray-lighter-color);
 }
 
 .bg-green {
 	background-color: var(--green-color);
 }
 
+/* Header */
+
 header .row {
 	height: 90px;
 }
 
-/* #DEBUG */
+/* Main */
 
-.debug .container {
-	background-color: #00000055;
-}
+/* Jumbo */
 
-.debug .nav_item,
-.debug .btn_menu,
-.debug .hero_title,
-.debug .hr_star,
-.debug .hero_subtitle {
-	height: 20px;
-	background-color: white;
-}
-
-.debug .nav_header {
-	height: 100%;
-	background-color: #99999955;
-}
-
-.debug .hero_img {
-	background-color: #2c3e50;
-}
-
-.debug .hero_img:before {
-	content: '';
-	padding-bottom: 100%;
-	display: block;
-}
-
-.debug [class*="card_"]::before {
-	content: '';
-	padding-bottom: 75%;
-	display: block;
-}
-
-.debug .card_1 {
-	background-color: #ba4b63;
-}
-
-.debug .card_2 {
-	background-color: #1ea4b6;
-}
-
-.debug .card_3 {
-	background-color: #000;
-}
-
-.debug .card_4 {
-	background-color: #1c83c1;
-}
-
-.debug .card_5 {
-	background-color: #0e38b5;
-}
-
-.debug .card_6 {
-	background-color: #ccb2a3;
-}
-
-.debug .copyright {
-	height: 20px;
-	background-color: white;
-}
-
-.debug p {
-	height: 100px;
-	background-color: white;
-}
-
-.debug .main_footer p {
-	height: 50px;
-	background-color: white;
+.jumbo_img {
+	width: 226px;
 }
 
 /* Cards */
 
-.debug .card_1 {
-	background-color: #ba4b63;
-}
-
-.debug .card_2 {
-	background-color: #1ea4b6;
-}
-
-.debug .card_3 {
-	background-color: #000;
-}
-
-.debug .card_4 {
-	background-color: #1c83c1;
-}
-
-.debug .card_5 {
-	background-color: #0e38b5;
-}
-
-.debug .card_6 {
-	background-color: #ccb2a3;
+.cards img {
+	width: 100%;
 }
