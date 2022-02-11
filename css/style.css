@@ -5,11 +5,27 @@
 	--blue-gray-color: #2c3e50;
 	--blue-gray-lighter-color: #3a546d;
 
-	--header-hight: 90px; /* Sizes */
+	--header-height: 90px; /* Sizes */
+	
+	--hr-width-xs: 42px; /* Overcomplicated horizzontale rule */
+	--hr-width-sm: 75px;
+	--hr-width-md: 142px;
+	--hr-width-xl: 172px;
+	--temp-hr-width-sm: var(--hr-width-xs);
+	--temp-hr-width-md: var(--hr-width-sm);
+	--temp-hr-width-xl: var(--hr-width-md);
+	--hr-mx-xs: 0 4px;
+	--hr-mx-sm: 0 8px;
+	--hr-mx-md: 0 25px;
+	--hr-mx-xl: 0 50px;
+	--temp-hr-mx-sm: var(--hr-mx-xs);
+	--temp-hr-mx-md: var(--hr-mx-sm);
+	--temp-hr-mx-xl: var(--hr-mx-md);
+
 }
 
 html {
-	scroll-padding-top: var(--header-hight); /* Allow links to go */
+	scroll-padding-top: var(--header-height); /* Allow links to go */
 }														  /* past the fixed header */
 
 body {
@@ -48,47 +64,58 @@ h1 {
  [class^='hr_star-']::after {
 	content: '';
 	display: inline-block;
-	width: 75px;
+	width: var(--hr-width-sm);
 	height: 4px;
 	border-radius: 2px;
-	margin: 0 8px;
+	margin: var(--hr-mx-sm);
+}
+
+[class^='hr_star-'][class*='-short'] {
+	--hr-width-sm: var(--temp-hr-width-sm);
+	--hr-width-md: var(--temp-hr-width-md);
+	--hr-width-xl: var(--temp-hr-width-xl);
+
+	--hr-mx-sm: var(--temp-hr-mx-sm);
+	--hr-mx-md: var(--temp-hr-mx-md);
+	--hr-mx-xl: var(--temp-hr-mx-xl);
 }
 
 @media screen and (min-width: 768px) {
 	[class^='hr_star-']::before,
 	 [class^='hr_star-']::after {
-		width: 142px;
-		margin: 0 25px;
+		width: var(--hr-width-md);
+		margin: var(--hr-mx-md);
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
 	[class^='hr_star-']::before,
 	 [class^='hr_star-']::after {
-		width: 172px;
+		width: var(--hr-width-xl);
+		margin: var(--hr-mx-xl);
 	}
 }
 
-.hr_star-white::before,
-.hr_star-white::after {
+[class^='hr_star-white']::before,
+[class^='hr_star-white']::after {
 	background-color: #fff;
 }
 
-.hr_star-black::before,
-.hr_star-black::after {
+[class^='hr_star-black']::before,
+[class^='hr_star-black']::after {
 	background-color: #000;
 }
 
 /* Header */
 
 header .row {
-	height: var(--header-hight);
+	height: var(--header-height);
 }
 
 /* Main */
 
 main { 
-	padding-top: var(--header-hight);
+	padding-top: var(--header-height);
 }
 
 /* Jumbo */
