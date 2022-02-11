@@ -3,18 +3,16 @@
 	--blue-gray-color: #2c3e50;
 }
 
-header,
-.main_footer {
+.bg-gray-blue {
 	background-color: var(--blue-gray-color);
+}
+
+.bg-green {
+	background-color: var(--green-color);
 }
 
 header .row {
 	height: 90px;
-}
-
-#jumbotron,
-#about {
-	background-color: var(--green-color);
 }
 
 /* #DEBUG */
@@ -77,8 +75,6 @@ header .row {
 	background-color: #ccb2a3;
 }
 
-#about .title,
-#about .hr_star,
 .debug .copyright {
 	height: 20px;
 	background-color: white;
@@ -89,19 +85,33 @@ header .row {
 	background-color: white;
 }
 
-#contact .title,
-#contact .hr_star,
-#contact .form {
-	height: 20px;
-	background-color: #000;
-}
-
-#contact .message {
-	height: 80px;
-	background-color: #000;
-}
-
 .debug .main_footer p {
 	height: 50px;
 	background-color: white;
+}
+
+/* Cards */
+
+.debug .card_1 {
+	background-color: #ba4b63;
+}
+
+.debug .card_2 {
+	background-color: #1ea4b6;
+}
+
+.debug .card_3 {
+	background-color: #000;
+}
+
+.debug .card_4 {
+	background-color: #1c83c1;
+}
+
+.debug .card_5 {
+	background-color: #0e38b5;
+}
+
+.debug .card_6 {
+	background-color: #ccb2a3;
 }
